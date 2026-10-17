@@ -1,0 +1,31 @@
+{
+    "total_requests": 8,
+    "unique_ips": [
+        "192.168.1.50",
+        "172.16.0.5",
+        "10.0.0.12"
+    ],
+    "endpoint_counts": {
+        "/login": 3,
+        "/dashboard": 2,
+        "/api/data": 2,
+        "/admin": 1
+    },
+    "failed_requests": [
+        {
+            "ip": "192.168.1.50",
+            "endpoint": "/api/data",
+            "status": "500"
+        },
+        {
+            "ip": "172.16.0.5",
+            "endpoint": "/login",
+            "status": "401"
+        },
+        {
+            "ip": "172.16.0.5",
+            "endpoint": "/admin",
+            "status": "403"
+        }
+    ]
+}
